@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header class="header">
+            <h1 class="logo-header">
+                <img src="imagenes/Logo.png" alt="Logo">
+            </h1>
+             <h2 class="title">Encriptador de texto</h2>
+    </header>
+    <main>
+        <div class="box-main"> 
+            <div class="box-text">
+                <textarea type="text" placeholder="Ingresa el texto aqui" id="box-text"></textarea>
+            </div>
+
+            <div class="box-hidden">
+                <div id="img-box-result"> 
+                    <img src="imagenes/hackerBlack.jpg" alt="hacker" class="imgHacker">
+                </div>
+                
+                <textarea id="hidden-text">Area para mostrar texto encriptado/desncriptado</textarea> 
+                
+            </div>
+        </div> 
+        <div class="button">
+            <button onclick= 'encrypt()' type="button" >Encriptar</button>
+            <button onclick = 'decrypt()' type="button">Desencriptar</button>
+            <button onclick="copy()" type="button" class="copy">Copiar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="copyright"> &#169 Copyright Daniela Alcalá</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
